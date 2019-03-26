@@ -20,4 +20,4 @@ class ShoppingList extends React.Component {
 }
 
 
-render(<ShoppingList />, document.getElementById('root'));
+render(<ShoppingList />, document.getElementById('lista-compra'));
