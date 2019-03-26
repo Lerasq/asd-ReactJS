@@ -3,24 +3,21 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: 'React'
-    };
-  }
-
+class ShoppingList extends React.Component {
   render() {
     return (
-      <div>
-        <Hello name={this.state.name} />
-        <p>
-          Start editing to see some magic happen :)
-        </p>
+      <div className="shopping-list">
+        <h1>Shopping List for {this.props.name}</h1>
+        <ul>
+          <li>Instagram</li>
+          <li>WhatsApp</li>
+          <li>Oculus</li>
+          <li>Twitter</li>
+        </ul>
       </div>
     );
   }
 }
 
-render(<App />, document.getElementById('root'));
+
+render(<ShoppingList />, document.getElementById('root'));
