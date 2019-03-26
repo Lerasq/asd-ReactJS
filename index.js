@@ -19,5 +19,25 @@ class ShoppingList extends React.Component {
   }
 }
 
+class NothingToDoHere extends React.Component {
+  render() {
+    return (
+      <div classNam="cacatua">
+        <table>
+            <tr>
+              <th>1</th>
+              <th>2</th>
+            </tr>
+            <tr>
+              <th>A</th>
+              <th>B</th>
+            </tr>
+        </table>
+          <hr/>
+      </div>
+    )
+  }
+}
 
+render(<NothingToDoHere />, document.getElementById('cacatua'));
 render(<ShoppingList />, document.getElementById('lista-compra'));
