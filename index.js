@@ -22,7 +22,7 @@ class ShoppingList extends React.Component {
 class NothingToDoHere extends React.Component {
   render() {
     return (
-      <div classNam="cacatua">
+      <div classNam="tabla">
         <table>
             <tr>
               <th>1</th>
@@ -39,5 +39,5 @@ class NothingToDoHere extends React.Component {
   }
 }
 
-render(<NothingToDoHere />, document.getElementById('cacatua'));
+render(<NothingToDoHere />, document.getElementById('tabla'));
 render(<ShoppingList />, document.getElementById('lista-compra'));
